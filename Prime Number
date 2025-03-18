@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+int a,b=2;
+scanf("%d",&a);
+if(a<=1){
+    printf("NO\n");
+    return 0;
+}
+while(b<a){
+    if(a%b==0){
+        printf("NO\n");
+        return 0;
+    }
+    else{
+     printf("YES\n");
+    }
+    b++;
+}
+   
+    return 0;
+}

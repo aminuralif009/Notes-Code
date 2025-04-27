@@ -1,0 +1,12 @@
+t = int(input())
+for _ in range(t):
+    a = list(map(int, input().split()))
+    alice = sum(a[:3]) - min(a[:3])
+    bob = sum(a[3:]) - min(a[3:])
+    
+    if alice > bob:
+        print("Alice")
+    elif bob > alice:
+        print("Bob")
+    else:
+        print("Tie")

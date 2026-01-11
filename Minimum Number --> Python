@@ -1,0 +1,6 @@
+n = int(input())
+a = list(map(int, input().split()))
+b = a.copy()
+b.sort()
+print(a.index(b[0]) + 1, a.index(b[1]) + 1, a.index(b[2]) + 1)     #Print index number
+print(b[0], b[1], b[2])                                            #print original value
